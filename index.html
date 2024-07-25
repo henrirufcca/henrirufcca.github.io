@@ -2,15 +2,39 @@
 <html>
 <head>
         <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+
 <script>
 function getText() {
     var str=document.getElementById("txtArea").value;
 alert(str + "i did it");
 }
 </script>
+
 </head>
+
 <body>
-<textarea rows="5" cols="30" id = "txtArea"> </textarea>
-<input type = "button" value="click here" onclick = "getText();" />
+   <form id="myForm">
+    <label>Full Name</label>
+    <br/>
+    <input name="name" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+    <label>Age</label>
+    <br/>
+    <input type="radio" id="age" name="age" value="18-35" /> 18-35<br/>
+    <input type="radio" id="age" name="age" value="35+" /> 35+<br/>
+    <br/>
+    <label>Message</label>
+    <br/>
+    <textarea name="message">
+    </textarea>
+    <br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()">Submit</button>
 </body>
+</html>
 </html>
