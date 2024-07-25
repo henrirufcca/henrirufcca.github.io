@@ -1,3 +1,24 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+        <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script>
+
+function getText() {
+    var str=document.getElementById("txtArea").value;
+alert(str + "i did it");
+}
+
+</script>
+</head>
+
+<body>
+<textarea rows="5" cols="30" id = "txtArea"> </textarea>
+<input type = "button" value="click here" onclick = "getText();" />
+</body>
+</html> -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +27,7 @@
 <script>
 function getText() {
     var str=document.getElementById("message").value;
-    alert(str + "i did it");
+    alert(str + " OK");
 }
 </script>
 
@@ -29,12 +50,13 @@ function getText() {
     <br/>
     <label>Message</label>
     <br/>
-    <textarea name="message">
+    <textarea name="message" id="txtArea">
     </textarea>
     <br/>
     <br/>
   </form>
-  <button onclick="SubForm()">Submit</button>
+  <!-- <textarea rows="5" cols="30" id = "txtArea"> </textarea> -->
+  <input type = "button" value="click here" onclick = "getText();" />
 </body>
 </html>
 </html>
